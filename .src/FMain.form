@@ -1,0 +1,48 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,64,64)
+  Icon = Picture["iconoscajas-11.png"]
+  { Label1 Label
+    MoveScaled(11,1,51,5)
+    Font = Font["Bold,Italic,+4"]
+    Text = ("Generador de Informes Fotográficos")
+    Alignment = Align.Center
+    Border = Border.Raised
+  }
+  { Labelversion Label
+    MoveScaled(11,6,51,4)
+    Text = ("version")
+    Alignment = Align.Center
+  }
+  { DirBox1 DirBox
+    MoveScaled(2,17,59,5)
+  }
+  { Label2 Label
+    MoveScaled(1,14,54,3)
+    Text = ("Indique la ruta donde estan las fotografías:")
+  }
+  { ButtonCrearInforme Button
+    MoveScaled(24,24,17,6)
+    Text = ("Crear Informe")
+    Picture = Picture["icon:/16/exec"]
+  }
+  { TextArea1 TextArea
+    MoveScaled(3,31,58,26)
+    Background = Color.Background
+    Text = ("Explicación de uso:\nEl fichero de informe se crea en el directorio donde estan las imágenes.\nSe denomina Informe.fodt (lo puedes abrir con LibreOffice Writer), y las imágenes las tiene enlazadas, con lo cual si lo va a mover a otro directorio, debe abrirlo y guardarlo como un fichero .pdf (para que las imágenes queden incrustadas y las puedas ver en otros directorios).\nDisfrútalo !!")
+    ReadOnly = True
+    Wrap = True
+  }
+  { PictureBox1 PictureBox
+    MoveScaled(1,1,9,9)
+    Border = Border.Raised
+    Picture = Picture["iconoscajas-11.png"]
+    Stretch = True
+  }
+  { ButtonSalir Button
+    MoveScaled(47,59,14,4)
+    Text = ("Salir")
+    Picture = Picture["icon:/16/quit"]
+  }
+}

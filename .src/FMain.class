@@ -1,0 +1,72 @@
+' Gambas class file
+
+Public Sub Form_Open()
+
+    Me.center
+    Labelversion.text = ("Realizado por ") & "jsbsan" & " " & ("Versión") & " " & Application.Version
+
+End
+
+Public Sub ButtonSalir_Click()
+
+    Me.close
+
+End
+
+Public Sub ButtonCrearInforme_Click()
+
+    Dim DIRECTORIO As String
+    Dim FILES As String[]
+    Dim filename As String
+    Dim contenido As String
+    Dim contenidofoto As String
+    Dim codigofoto As String
+
+    DIRECTORIO = DirBox1.ValuE
+
+    '1 leo los ficheros tipo imagen del directorio seleccionado
+    FILES = Dir(DIRECTORIO, "*.png")
+    FILES.Insert(Dir(DIRECTORIO, "*.jpeg"))
+    FILES.Insert(Dir(DIRECTORIO, "*.jpg"))
+    FILES.Insert(Dir(DIRECTORIO, "*.bmp"))
+
+    '2 creo el codigo de las imagenes
+    codigofoto = File.Load("foto.html")
+
+    For Each filename In files.Sort()
+
+        contenidofoto = codigofoto
+
+        'reemplazo nombre y ruta
+        contenidofoto = Replace(contenidofoto, "##texto##", convierteFrase(File.BaseName(filename)))
+        contenidofoto = Replace(contenidofoto, "##RUTA##", filename)
+
+        'añado al contenido
+        contenido &= contenidofoto
+    Next
+
+    '3 añado la cabecera y el final
+    contenido = File.Load("cabecera.html") & contenido & File.Load("final.html")
+
+    'pongo la versión del programa
+    contenido = Replace(contenido, "#programaversion#", "GENINFOTO versión " & Application.Version)
+
+    '4 guardo el archivo creado
+    File.Save(directorio & "/Informe.fodt", contenido)
+
+    Message.Info("Informe realizado")
+
+    Shell "libreoffice " & directorio & "/Informe.fodt"
+
+End
+
+Public Function convierteFrase(texto As String) As String
+
+    'mongo en minusculas todos
+    'pongo el 1º caracter en mayuscula
+
+    texto = String.LCase(texto)
+    texto = String.UCase(String.Mid(texto, 1, 1)) & String.Mid(texto, 2, Len(texto))
+    Return texto
+
+End
