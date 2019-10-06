@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Sun, 06 Oct 2019 12:00:00 +0000
+Source: geninfoto-qt5
+Binary: geninfoto-qt5
+Architecture: source all
+Version: 0.0.1-1
+Distribution: unstable
+Urgency: low
+Maintainer: julio sanchez berro <mint@mint-SSD>
+Changed-By: julio sanchez berro <mint@mint-SSD>
+Description:
+ geninfoto-qt5 - qt5 package for geninfoto
+Changes:
+ geninfoto-qt5 (0.0.1-1) unstable; urgency=low
+ .
+   * Lanzamiento inicial
+Checksums-Sha1:
+ 96ba039ad258615214c9e11345bf1106e659dc88 547 geninfoto-qt5_0.0.1-1.dsc
+ c5e1f445bb7d962cb40b70a061a05aa863c694bb 796 geninfoto-qt5_0.0.1-1.tar.gz
+ 1de45746af67a1c16b03d6fe646f5b542807c7b3 1292 geninfoto-qt5_0.0.1-1_all.deb
+ ccfe233d65813a47cf7a60cd5b8944ca66f9fdc0 13467 geninfoto-qt5_0.0.1-1_amd64.buildinfo
+Checksums-Sha256:
+ 9b22d536a05cd8a494a8ff748c7f02627613474a6ae451aaf024093030c0bd72 547 geninfoto-qt5_0.0.1-1.dsc
+ 1bbd8c1ae097733d9bbf596d5206f9f3be31ead3f4331dc7aa2cb49030b66b94 796 geninfoto-qt5_0.0.1-1.tar.gz
+ b3f5bb58419dc607030f895b7fba67de74f1f2994d7bd8849c6aaafa5b96e64e 1292 geninfoto-qt5_0.0.1-1_all.deb
+ 071ca61707a511e64562d9d6715baaade4f9dbb53bd3d51bcb00b2221a6f57eb 13467 geninfoto-qt5_0.0.1-1_amd64.buildinfo
+Files:
+ a87bfcb297510c2488c89500f4a07723 547 contrib/education optional geninfoto-qt5_0.0.1-1.dsc
+ a8792bb96b6a323476b1aa7eacf47d48 796 contrib/education optional geninfoto-qt5_0.0.1-1.tar.gz
+ f12e96e45a7c4b1bd90df65718555eca 1292 contrib/education optional geninfoto-qt5_0.0.1-1_all.deb
+ d19e4a0e232d622870426778430bac7c 13467 contrib/education optional geninfoto-qt5_0.0.1-1_amd64.buildinfo
