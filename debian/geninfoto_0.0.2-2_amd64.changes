@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Sun, 18 Jul 2021 12:00:00 +0000
+Source: geninfoto
+Binary: geninfoto
+Architecture: source all
+Version: 0.0.2-2
+Distribution: unstable
+Urgency: low
+Maintainer: julio sanchez berro <jusabejusabe@gmail.com>
+Changed-By: julio sanchez berro <jusabejusabe@gmail.com>
+Description:
+ geninfoto  - Generador de informes fotográficos
+Changes:
+ geninfoto (0.0.2-2) unstable; urgency=low
+ .
+   * mejora para agregar titulos subtitulos y fechas. Puedes pegar la ruta que
+     este en el portapapeles
+Checksums-Sha1:
+ b244a06fe1c8940c4b73959f381233271bc80262 947 geninfoto_0.0.2-2.dsc
+ e35b0efec2acf250f0c1392a6ff610b0ce811eee 1325 geninfoto_0.0.2-2.diff.gz
+ 722ccf6c1e3ebb22f33a5397bbf19e5a1cef6553 223560 geninfoto_0.0.2-2_all.deb
+ 0e6cbf6b47c45e40dec9a296eb125cc89aec8620 17194 geninfoto_0.0.2-2_amd64.buildinfo
+Checksums-Sha256:
+ c67f106746a94db2fdf3e206333c9d5fab86a61c1ac5c1fb23ae7f8fc85729bb 947 geninfoto_0.0.2-2.dsc
+ fc95b498a0f5bd03bec55865e6fcdd07d8a2a664b671b35b3b19264a2e71b96d 1325 geninfoto_0.0.2-2.diff.gz
+ 9ba208c96073f9e149e281f2907766b5ca1cea87754db6974e77dab49d4a1354 223560 geninfoto_0.0.2-2_all.deb
+ a949f68775b78e22eb54793c71a85774c5c963398f006025ec623c05947478d7 17194 geninfoto_0.0.2-2_amd64.buildinfo
+Files:
+ 237f3f032497443df3702cc24df7ecbd 947 contrib/education optional geninfoto_0.0.2-2.dsc
+ f1a09e7deab3bf547c97f821a64bc11e 1325 contrib/education optional geninfoto_0.0.2-2.diff.gz
+ 8568089bd138faa94f04083f52146b91 223560 contrib/education optional geninfoto_0.0.2-2_all.deb
+ 9b6114b33b9c71097684a05954029c9f 17194 contrib/education optional geninfoto_0.0.2-2_amd64.buildinfo

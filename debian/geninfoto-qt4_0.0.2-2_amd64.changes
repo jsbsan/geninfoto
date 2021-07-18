@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Sun, 18 Jul 2021 12:00:00 +0000
+Source: geninfoto-qt4
+Binary: geninfoto-qt4
+Architecture: source all
+Version: 0.0.2-2
+Distribution: unstable
+Urgency: low
+Maintainer: julio sanchez berro <jusabejusabe@gmail.com>
+Changed-By: julio sanchez berro <jusabejusabe@gmail.com>
+Description:
+ geninfoto-qt4 - qt4 package for geninfoto
+Changes:
+ geninfoto-qt4 (0.0.2-2) unstable; urgency=low
+ .
+   * mejora para agregar titulos subtitulos y fechas. Puedes pegar la ruta que
+     este en el portapapeles
+Checksums-Sha1:
+ 967ee401e1cef6a32936e6ee9ca945284529d286 556 geninfoto-qt4_0.0.2-2.dsc
+ 69dbabce34ad3a72549ff1dcb3ff2155b23f5d72 879 geninfoto-qt4_0.0.2-2.tar.gz
+ 61863b1e898c2a903ae1a7dd12468dd915473d5e 1392 geninfoto-qt4_0.0.2-2_all.deb
+ 95c13d2a233f9e240dab27799c979edc1874295b 13442 geninfoto-qt4_0.0.2-2_amd64.buildinfo
+Checksums-Sha256:
+ 4c2e2e025e260b22896f2c8cf24e7a142445053b943506e680be7ae95eff85a7 556 geninfoto-qt4_0.0.2-2.dsc
+ add67ff617dea22f0d5c31fd674823a76a30eaab05f461a12ee8754bdd0985f9 879 geninfoto-qt4_0.0.2-2.tar.gz
+ fe8ee4ddf6b0dab0c6dfbda501a25e1f9d4fcae479f9fb2e6be06eeac0af931b 1392 geninfoto-qt4_0.0.2-2_all.deb
+ 55e723da725d9d829e1b04aa41a38a0c0f02fb750fa6972b72d77824f1a09b79 13442 geninfoto-qt4_0.0.2-2_amd64.buildinfo
+Files:
+ 8499340bbeac46185374dfeae69ab58e 556 contrib/education optional geninfoto-qt4_0.0.2-2.dsc
+ 641fb5ac0ce577d2fd385ed9a41c9c80 879 contrib/education optional geninfoto-qt4_0.0.2-2.tar.gz
+ ec72a4d872bf948a9413423bdf23c023 1392 contrib/education optional geninfoto-qt4_0.0.2-2_all.deb
+ d7ccb7fedf7697be59f75a6be4c9c4f7 13442 contrib/education optional geninfoto-qt4_0.0.2-2_amd64.buildinfo

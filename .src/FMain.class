@@ -4,6 +4,8 @@ Public Sub Form_Open()
 
     Me.center
     Labelversion.text = ("Realizado por ") & "jsbsan" & " " & ("Versión") & " " & Application.Version
+    TextBoxFECHA.Text = Format(Now, "dd/mm/yyyy")
+    ComboBoxLugar.List = Split(File.Load("textoComboBox.txt"), gb.crlf)
 
 End
 
@@ -21,8 +23,18 @@ Public Sub ButtonCrearInforme_Click()
     Dim contenido As String
     Dim contenidofoto As String
     Dim codigofoto As String
+    Dim resp As String
 
     DIRECTORIO = DirBox1.ValuE
+
+    If directorio = "" Then
+        resp = InputBox("El directorio usado es el contenido en el portapapeles", "Directorio", Clipboard.Paste())
+        If resp = "" Then
+            Return
+        Else
+            directorio = resp
+        Endif
+    Endif
 
     '1 leo los ficheros tipo imagen del directorio seleccionado
     FILES = Dir(DIRECTORIO, "*.png")
@@ -32,7 +44,6 @@ Public Sub ButtonCrearInforme_Click()
 
     '2 creo el codigo de las imagenes
     codigofoto = File.Load("foto.html")
-
     For Each filename In files.Sort()
 
         contenidofoto = codigofoto
@@ -51,12 +62,16 @@ Public Sub ButtonCrearInforme_Click()
     'pongo la versión del programa
     contenido = Replace(contenido, "#programaversion#", "GENINFOTO versión " & Application.Version)
 
+    contenido = Replace(contenido, "#tituloInforme#", ComboBoxLugar.text)
+    contenido = Replace(contenido, "#textoInforme#", TextBoxSUBTITULO.text)
+    contenido = Replace(contenido, "#fechaInforme#", TextBoxFECHA.text)
+
     '4 guardo el archivo creado
     File.Save(directorio & "/Informe.fodt", contenido)
 
     Message.Info("Informe realizado")
 
-    Shell "libreoffice " & directorio & "/Informe.fodt"
+    Shell "libreoffice \'" & directorio & "/Informe.fodt" & "\'"
 
 End
 

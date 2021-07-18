@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Sun, 18 Jul 2021 12:00:00 +0000
+Source: geninfoto-qt5
+Binary: geninfoto-qt5
+Architecture: source all
+Version: 0.0.2-2
+Distribution: unstable
+Urgency: low
+Maintainer: julio sanchez berro <jusabejusabe@gmail.com>
+Changed-By: julio sanchez berro <jusabejusabe@gmail.com>
+Description:
+ geninfoto-qt5 - qt5 package for geninfoto
+Changes:
+ geninfoto-qt5 (0.0.2-2) unstable; urgency=low
+ .
+   * mejora para agregar titulos subtitulos y fechas. Puedes pegar la ruta que
+     este en el portapapeles
+Checksums-Sha1:
+ 41df862f040585f10cc0ba540bc3e9d02219aead 556 geninfoto-qt5_0.0.2-2.dsc
+ ac1a7b5b01719e329fdfd894adadf4df250ffcfa 880 geninfoto-qt5_0.0.2-2.tar.gz
+ e3f5db4453cce0a78002faf0305b04192e1d6ca7 1392 geninfoto-qt5_0.0.2-2_all.deb
+ 0db7967b9c71a0dadbfbfbcbcb20bcf873365cae 13442 geninfoto-qt5_0.0.2-2_amd64.buildinfo
+Checksums-Sha256:
+ 1c53e11c8037d681d2c8a760884d938c7ef0a39942a9f0c9328e9bed44d02784 556 geninfoto-qt5_0.0.2-2.dsc
+ a98f7a23af840a1e6a491cf1c5bc77754ea665adae88b64f6bad2de9aa696b0f 880 geninfoto-qt5_0.0.2-2.tar.gz
+ 9f3bc2ecb0a1ea52042a47ab6c808eac6c2ea29435dbd7fea5d8c878a28874ca 1392 geninfoto-qt5_0.0.2-2_all.deb
+ 9ed4495e6e094fbefd4bf27f62b11062e44c8e6dc3b46d387ce4e526e686218b 13442 geninfoto-qt5_0.0.2-2_amd64.buildinfo
+Files:
+ 52e52b17b3c8e951dd2530da3d4b5c95 556 contrib/education optional geninfoto-qt5_0.0.2-2.dsc
+ e87bb9c3960ee9046f80db881571fd40 880 contrib/education optional geninfoto-qt5_0.0.2-2.tar.gz
+ 4f63d251ced1a9484f6517b8b1033688 1392 contrib/education optional geninfoto-qt5_0.0.2-2_all.deb
+ 5be71b6b2e056cc24da60dc399e3be27 13442 contrib/education optional geninfoto-qt5_0.0.2-2_amd64.buildinfo
