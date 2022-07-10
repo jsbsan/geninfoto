@@ -1,0 +1,32 @@
+' Gambas module file
+
+Public Sub buscarParecida(lista As String[], palabra As String) As String
+
+    Dim a As Integer
+    Dim letra As String
+    Dim ltmp As String 'palabra de la lista
+    Dim puntos As Integer
+    Dim maximopunto As Integer = -1
+    Dim palabraElegida As String
+    'busqueda de letra
+
+    For Each ltmp In lista
+
+        puntos = 0
+        For a = 0 To Len(ltmp) - 1
+            If InStr(Upper$(ltmp), Upper$(Mid(palabra, 1 + a, 1))) <> 0 Then
+                puntos += 1
+
+            Endif
+        Next
+
+        If puntos > maximopunto Then
+            palabraElegida = ltmp
+            maximopunto = puntos
+        Endif
+
+    Next
+
+    Return palabraElegida
+
+End

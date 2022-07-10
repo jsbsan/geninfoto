@@ -2,6 +2,7 @@
 
 { Form Form
   MoveScaled(0,0,64,89)
+  ToolTip = ("Pegar informacion del portapapeles")
   Icon = Picture["iconoscajas-11.png"]
   { Label1 Label
     MoveScaled(10,1,54,5)
@@ -37,7 +38,7 @@
   }
   { PictureBox1 PictureBox
     MoveScaled(1,1,9,9)
-    Picture = Picture["iconoscajas-11.png"]
+    Picture = Picture.Load("iconoscajas-11.png")
     Stretch = True
     Border = Border.Raised
   }
@@ -78,5 +79,9 @@
   { Label7 Label
     MoveScaled(7,43,53,5)
     Text = ("Si esta vacia la ruta, pone la ruta del portapapeles")
+  }
+  { ButtonCargarInformacionPortapapeles Button
+    MoveScaled(52,27,10,9)
+    Picture = Picture["icon:/24/paste-special"]
   }
 }

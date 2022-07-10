@@ -7,6 +7,8 @@ Public Sub Form_Open()
     TextBoxFECHA.Text = Format(Now, "dd/mm/yyyy")
     ComboBoxLugar.List = Split(File.Load("textoComboBox.txt"), gb.crlf)
 
+    'probar rellenar con datos de ruta
+
 End
 
 Public Sub ButtonSalir_Click()
@@ -83,5 +85,19 @@ Public Function convierteFrase(texto As String) As String
     texto = String.LCase(texto)
     texto = String.UCase(String.Mid(texto, 1, 1)) & String.Mid(texto, 2, Len(texto))
     Return texto
+
+End
+
+Public Sub ButtonCargarInformacionPortapapeles_Click()
+
+    Dim arrayruta As String[]
+
+    DirBox1.ValuE = Clipboard.Paste()
+
+    arrayruta = Split(DirBox1.value, "/")
+
+    ComboBoxLugar.Text = ModuleEncuentra.buscarParecida(ComboBoxLugar.List, arrayruta[arrayruta.Count - 2])
+
+    TextBoxSUBTITULO.Text = arrayruta[arrayruta.Count - 1]
 
 End
