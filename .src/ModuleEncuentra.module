@@ -5,9 +5,10 @@ Public Sub buscarParecida(lista As String[], palabra As String) As String
     Dim a As Integer
     Dim letra As String
     Dim ltmp As String 'palabra de la lista
-    Dim puntos As Integer
-    Dim maximopunto As Integer = -1
+    Dim puntos As Single
+    Dim maximopunto As Single = -1
     Dim palabraElegida As String
+    Dim proporcionAcierto As Single
     'busqueda de letra
 
     For Each ltmp In lista
@@ -15,14 +16,17 @@ Public Sub buscarParecida(lista As String[], palabra As String) As String
         puntos = 0
         For a = 0 To Len(ltmp) - 1
             If InStr(Upper$(ltmp), Upper$(Mid(palabra, 1 + a, 1))) <> 0 Then
-                puntos += 1
+                puntos += 100
 
             Endif
         Next
+        'media de puntos segun longitud
+        proporcionAcierto = (puntos / 10) / Len(ltmp)
 
-        If puntos > maximopunto Then
+        If (puntos + proporcionAcierto) > maximopunto Then
             palabraElegida = ltmp
-            maximopunto = puntos
+            maximopunto = puntos + proporcionAcierto
+
         Endif
 
     Next
