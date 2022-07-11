@@ -69,11 +69,11 @@ Public Sub ButtonCrearInforme_Click()
     contenido = Replace(contenido, "#fechaInforme#", TextBoxFECHA.text)
 
     '4 guardo el archivo creado
-    File.Save(directorio & "/Informe.fodt", contenido)
+    File.Save(directorio & "/Informe fotografico.fodt", contenido)
 
     Message.Info("Informe realizado")
 
-    Shell "libreoffice \'" & directorio & "/Informe.fodt" & "\'"
+    Shell "libreoffice \'" & directorio & "/Informe fotografico.fodt" & "\'"
 
 End
 
