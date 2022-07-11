@@ -12,7 +12,7 @@ Public Sub buscarParecida(lista As String[], palabra As String) As String
     'busqueda de letra
 
     For Each ltmp In lista
-
+        proporcionAcierto = 0
         puntos = 0
         For a = 0 To Len(ltmp) - 1
             If InStr(Upper$(ltmp), Upper$(Mid(palabra, 1 + a, 1))) <> 0 Then
@@ -21,7 +21,7 @@ Public Sub buscarParecida(lista As String[], palabra As String) As String
             Endif
         Next
         'media de puntos segun longitud
-        proporcionAcierto = (puntos / 10) / Len(ltmp)
+        If Len(ltmp) > 0 Then proporcionAcierto = (puntos / 10) / Len(ltmp)
 
         If (puntos + proporcionAcierto) > maximopunto Then
             palabraElegida = ltmp
